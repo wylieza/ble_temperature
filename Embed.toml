@@ -1,0 +1,7 @@
+# Config for when we use the 'embed' command
+
+[default.general]
+chip = "nRF52833_xxAA"
+
+[default.rtt]
+enabled = true

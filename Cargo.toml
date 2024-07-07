@@ -1,0 +1,19 @@
+[package]
+name = "ble_temperature"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Runtime on the cortex-m architecture
+cortex-m-rt = "0.7.3"
+# Panic handler for when we crash
+panic-halt = "0.2.0"
+# We need 'critical-section' to use RTT - critical section provided by the cortex-m crate
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+# RTT for debugging with messages
+rtt-target = "0.5.0"
+
+# HAL for when hardware is used
+# nrf52833-hal = "0.18.0"
